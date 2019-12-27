@@ -1,0 +1,1365 @@
+<div class="btn">
+    <a href="../home/home.component.html"><button type="button" class="btn btn-primary btn-sm">Voltar</button></a>
+</div>  
+
+<div class="page-padrao page-hemo ng-scope" ng-controller="hemoCtrl">
+  <div class="container">
+  <div class="row">
+  <div class="col-md-12">
+  </div>
+  <div class="col-md-6 bloco">
+  <!-- ngRepeat: regiao in regioes --><div ng-repeat="regiao in regioes" class="ng-scope">
+  <div class="col-md-12" ng-hide="estado.value || search.cep">
+  <h5 ng-bind-html="regiao.regiao" class="ng-binding">Região Norte</h5>
+  </div>
+  <!-- ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Acre</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemoacre</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av. Getúlio Vargas, 2787 - Vila Ivonete - Rio Branco, Acre - Cep:69914-500</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(68)32481377  </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Getúlio+Vargas,+2787+-+Bosque,+Rio+Branco+-+AC,+Brazil/@-9.9537615,-67.8188671" ng-href="https://www.google.com.br/maps/place/Avenida+Getúlio+Vargas,+2787+-+Bosque,+Rio+Branco+-+AC,+Brazil/@-9.9537615,-67.8188671"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Amapá</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemoap</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Fab, 0 - Central - Macapa, Amapá - Cep:68900-073</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(96)32126139 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Fab,+0+-+Santa+Rita,+Macapá+-+AP,+68901-259,+Brazil/@0.0400864,-51.0498131" ng-href="https://www.google.com.br/maps/place/Avenida+Fab,+0+-+Santa+Rita,+Macapá+-+AP,+68901-259,+Brazil/@0.0400864,-51.0498131"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Amazonas</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Fhemoam</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Constantino Nery, 4397 - Chapada - Manaus, Amazonas - Cep:69050-000</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(92)36550167  <br> (92)36565180</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Constantino+Nery,+4397+-+Chapada,+Manaus+-+AM,+Brazil/@-3.0859786,-60.0266938" ng-href="https://www.google.com.br/maps/place/Avenida+Constantino+Nery,+4397+-+Chapada,+Manaus+-+AM,+Brazil/@-3.0859786,-60.0266938"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Pará</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Fundação Hemopa</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Travessa Padre Eutiquio, 2109 - Batista Campos - Belem, Pará - Cep:66033-000</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(91)32429100 Ramal:241 <br> (91)32429100 Ramal:239 <br> (91)32235933 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Travessa+Padre+Eutíquio,+2109+-+Batista+Campos,+Belém+-+PA,+66023-710,+Brazil/@-1.4630392,-48.487432" ng-href="https://www.google.com.br/maps/place/Travessa+Padre+Eutíquio,+2109+-+Batista+Campos,+Belém+-+PA,+66023-710,+Brazil/@-1.4630392,-48.487432"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Rondônia</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Fhemeron</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Benedito De S Brito, 0 Fhemeron - Industrial - Porto Velho, Rondônia - Cep:76821-080</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(69)32165485 <br> (69)32165487 <br> (69)32162204 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Benedito+de+Souza+Brito,+0,+Porto+Velho+-+RO,+Brazil/@-8.7376896,-63.8907149" ng-href="https://www.google.com.br/maps/place/Rua+Benedito+de+Souza+Brito,+0,+Porto+Velho+-+RO,+Brazil/@-8.7376896,-63.8907149"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Rondônia</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Uct De Ji Paraná</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Vilagran Cabrita, 1440 - Centro - Ji-parana, Rondônia - Cep:76900-044</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(69)34226762 <br> (69)34211615</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Ji-Paraná+-+RO,+Brazil/@-10.8781412,-61.9326728" ng-href="https://www.google.com.br/maps/place/Ji-Paraná+-+RO,+Brazil/@-10.8781412,-61.9326728"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Roraima</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemocentro De Roraima</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Brg Eduardo Gomes, 3418 - Aeroporto - Boa Vista, Roraima - Cep:69304-015</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(95)21210883 <br> (95)21210859</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Brigadeiro+Eduardo+Gomes,+3418+-+Aparecida,+Boa+Vista+-+RR,+Brazil/@2.8315263,-60.6896838" ng-href="https://www.google.com.br/maps/place/Avenida+Brigadeiro+Eduardo+Gomes,+3418+-+Aparecida,+Boa+Vista+-+RR,+Brazil/@2.8315263,-60.6896838"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Tocantins</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Unidade De Coleta De Transfusão Augustinópolis</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Rua Anicuns, 200 - Centro - Augustinópolis, Tocantins - Cep:77960-000</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(63)3456-1309/(63)3456-1308</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/R.+Anicuns,+200,+Augustin%C3%B3polis+-+TO,+77960-000/@-5.4655082,-47.8814471,17z/data=!4m7!1m4!3m3!1s0x92c5112aa14e09af:0xa59820129317eb01!2sR.+Anicuns,+200,+Augustin%C3%B3polis+-+TO,+77960-000!3b1!3m1!1s0x92c5112aa14e09af:0xa59820129317eb01" ng-href="https://www.google.com.br/maps/place/R.+Anicuns,+200,+Augustin%C3%B3polis+-+TO,+77960-000/@-5.4655082,-47.8814471,17z/data=!4m7!1m4!3m3!1s0x92c5112aa14e09af:0xa59820129317eb01!2sR.+Anicuns,+200,+Augustin%C3%B3polis+-+TO,+77960-000!3b1!3m1!1s0x92c5112aa14e09af:0xa59820129317eb01"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Tocantins</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemocentro Coordenador De Palmas</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">301 Norte, Av. Ns 01, Conj. 02 Lote 01, 0 - Plano Diretor Norte - Palmas, Tocantins - Cep:77015-200</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(63)32183287</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Quadra+301+Norte+Rua+NS+A,+1+-+Plano+Diretor+Norte,+Palmas+-+TO,+Brazil/@-10.1711902,-48.3346931" ng-href="https://www.google.com.br/maps/place/Quadra+301+Norte+Rua+NS+A,+1+-+Plano+Diretor+Norte,+Palmas+-+TO,+Brazil/@-10.1711902,-48.3346931"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Tocantins</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemocentro Regional De Araguaína</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Treze De Maio, 1336 - Setor Central - Araguaina, Tocantins - Cep:77803-130</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(63)34112917<br>(63)34152900 <br>(63)34138100</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Treze+de+Maio,+1336+-+Vila+Rosario,+Araguaína+-+TO,+Brazil/@-7.1931538,-48.2098721" ng-href="https://www.google.com.br/maps/place/Rua+Treze+de+Maio,+1336+-+Vila+Rosario,+Araguaína+-+TO,+Brazil/@-7.1931538,-48.2098721"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Tocantins</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Núcleo De Hemoterapia De Gurupi</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Quatorze De Novembro, 0 Qd: 117 Lote:18 - Setor Central - Gurupi, Tocantins - Cep:77405-070</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(63)32122237</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Quatorze+de+Novembro+-+Setor+Central,+Gurupi+-+TO,+Brazil/@-11.7293155,-49.0612066" ng-href="https://www.google.com.br/maps/place/Rua+Quatorze+de+Novembro+-+Setor+Central,+Gurupi+-+TO,+Brazil/@-11.7293155,-49.0612066"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar -->
+  </div><!-- end ngRepeat: regiao in regioes --><div ng-repeat="regiao in regioes" class="ng-scope">
+  <div class="col-md-12" ng-hide="estado.value || search.cep">
+  <h5 ng-bind-html="regiao.regiao" class="ng-binding">Região Nordeste</h5>
+  </div>
+  <!-- ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Alagoas</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemocentro De Alagoas – Hemoal</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av. Jorge De Lima, 58 - Trapiche - Maceio, Alagoas - Cep:57010-300</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(82)33152107 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Doutor+Jorge+de+Lima,+58+-+Trapiche+da+Barra,+Maceió+-+AL,+57010-382,+Brazil/@-9.672467,-35.7582896" ng-href="https://www.google.com.br/maps/place/Rua+Doutor+Jorge+de+Lima,+58+-+Trapiche+da+Barra,+Maceió+-+AL,+57010-382,+Brazil/@-9.672467,-35.7582896"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Bahia</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemoba</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Ld Do Hospital Geral, 0 2º Andar - Brotas - Salvador, Bahia - Cep:40286-240</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(71)31165600 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Ladeira+do+Hospital+Geral,+0+-+Brotas,+Salvador+-+BA,+Brazil/@-12.9976148,-38.4922132" ng-href="https://www.google.com.br/maps/place/Ladeira+do+Hospital+Geral,+0+-+Brotas,+Salvador+-+BA,+Brazil/@-12.9976148,-38.4922132"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Ceará</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemoce</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Raimundo Facanha, 3390  - Rodolfo Teofilo - Fortaleza, Ceará - Cep:60431-000</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(85)31012296 Ramal:211</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Raimundo+Façanha+-+Rodolfo+Teófilo,+Fortaleza+-+CE,+Brazil/@-3.7381332,-38.545462" ng-href="https://www.google.com.br/maps/place/Rua+Raimundo+Façanha+-+Rodolfo+Teófilo,+Fortaleza+-+CE,+Brazil/@-3.7381332,-38.545462"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Maranhão</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Centro De Hematologia E Hemoterapia Do Maranhão</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Cinco De Janeiro, 0 - Jordoa - Sao Luis, Maranhão - Cep:65040-450</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(98)32161156  <br> (98)32161137  <br> (98)32161134 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Cinco+de+Janeiro,+0+-+Jórdoa,+São+Luís+-+MA,+Brazil/@-2.5448137,-44.2655918" ng-href="https://www.google.com.br/maps/place/Rua+Cinco+de+Janeiro,+0+-+Jórdoa,+São+Luís+-+MA,+Brazil/@-2.5448137,-44.2655918"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraíba</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemocentro Coordenador Paraíba</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av D Pedro Ii, 1119 - Centro - Joao Pessoa, Paraíba - Cep:58013-420</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(83)32185690 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Dom+Pedro+II,+1119+-+Torre,+João+Pessoa+-+PB,+58040-440,+Brazil/@-7.1254229,-34.8739316" ng-href="https://www.google.com.br/maps/place/Avenida+Dom+Pedro+II,+1119+-+Torre,+João+Pessoa+-+PB,+58040-440,+Brazil/@-7.1254229,-34.8739316"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Pernambuco</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Fundação De Hematologia E Hemoterapia De Pernambuco</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Rua Joaquim Nabuco, 171 - Gracas - Recife, Pernambuco - Cep:52011-100</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(81)31824600 <br> (81)31824648 <br> (81)31824653</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Joaquim+Nabuco,+171+-+Santana,+Recife+-+PE,+Brazil/@-8.052668,-34.8979476" ng-href="https://www.google.com.br/maps/place/Rua+Joaquim+Nabuco,+171+-+Santana,+Recife+-+PE,+Brazil/@-8.052668,-34.8979476"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Pernambuco</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemocentro Regional Caruaru</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Oswaldo Cruz, 0 - Mauricio De Nassau - Caruaru, Pernambuco - Cep:55012-040</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(81)37199565 <br> (81)37199570 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Oswaldo+Cruz,+0+-+Maurício+de+Nassau,+Caruaru+-+PE,+Brazil/@-8.2809201,-35.9726322" ng-href="https://www.google.com.br/maps/place/Avenida+Oswaldo+Cruz,+0+-+Maurício+de+Nassau,+Caruaru+-+PE,+Brazil/@-8.2809201,-35.9726322"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Pernambuco</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemocentro Regional De Garanhuns</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Goncalves Maia, 0 - Heliopolis - Garanhuns, Pernambuco - Cep:55296-270</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(87)37618520 <br> (87)37618530 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Gonçalves+Maia+-+Heliópolis,+Garanhuns+-+PE,+Brazil/@-8.885081,-36.4815707" ng-href="https://www.google.com.br/maps/place/Avenida+Gonçalves+Maia+-+Heliópolis,+Garanhuns+-+PE,+Brazil/@-8.885081,-36.4815707"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Pernambuco</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Núcelo De Hemoterapia Regional Arcoverde</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Joaquim Nabuco, 0 - Centro - Arcoverde, Pernambuco - Cep:56506-470</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(87)31821462 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Joaquim+Nabuco,+0+-+Centro,+Arcoverde+-+PE,+56505-150,+Brazil/@-8.4176126,-37.0584723" ng-href="https://www.google.com.br/maps/place/Avenida+Joaquim+Nabuco,+0+-+Centro,+Arcoverde+-+PE,+56505-150,+Brazil/@-8.4176126,-37.0584723"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Pernambuco</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Núcleo De Hemoterapia Regional Ouricuri</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Rua Ulisses Guimarães, 0 - Centro - Ouricuri, Pernambuco - Cep:56200-970</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(87)31821086 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Ulisses+Guimarães,+0+-+Centro,+Ouricuri+-+PE,+56200-000,+Brazil/@-7.8812795,-40.0840237" ng-href="https://www.google.com.br/maps/place/Rua+Ulisses+Guimarães,+0+-+Centro,+Ouricuri+-+PE,+56200-000,+Brazil/@-7.8812795,-40.0840237"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Pernambuco</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Núcleo De Hemoterapia Regional Petrolina</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Pacifico Da Luz, 0 - Centro - Petrolina, Pernambuco - Cep:56304-010</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(87)31825866 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Pacífico+da+Luz,+0+-+Centro,+Petrolina+-+PE,+56304-010,+Brazil/@-9.3985164,-40.5009372" ng-href="https://www.google.com.br/maps/place/Rua+Pacífico+da+Luz,+0+-+Centro,+Petrolina+-+PE,+56304-010,+Brazil/@-9.3985164,-40.5009372"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Pernambuco</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Núcleo De Hemoterapia Regional Salgueiro</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Rua Joaquim Gondim, 65 - Centro - Salgueiro, Pernambuco - Cep:56000-970</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(87)31820804 <br> (87)31820343</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Salgueiro+-+PE,+Brazil/@-8.0725066,-39.1268089" ng-href="https://www.google.com.br/maps/place/Salgueiro+-+PE,+Brazil/@-8.0725066,-39.1268089"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Pernambuco</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Núcleo De Hemoterapia Regional Serra Talhada</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Joaquim Godoy, 0 - Nossa Senhora Da Penha - Serra Talhada, Pernambuco - Cep:56912-450</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(87)38319323 <br> (087)38319330 <br> (87)38319328 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Joaquim+Godoy,+0+-+Nossa+Senhora+da+Penha,+Serra+Talhada+-+PE,+Brazil/@-7.9890534,-38.2959533" ng-href="https://www.google.com.br/maps/place/Rua+Joaquim+Godoy,+0+-+Nossa+Senhora+da+Penha,+Serra+Talhada+-+PE,+Brazil/@-7.9890534,-38.2959533"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Piauí</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemopi</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Rua 1º De Maio, 235 - Centro/sul - Teresina, Piauí - Cep:64001-430</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(86)32218319 <br> (86)32218320</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+1º+de+Maio,+235+-+Margarida+Galvan,+Dois+Vizinhos+-+PR,+85660-000,+Brazil/@-25.7280799,-53.0592741" ng-href="https://www.google.com.br/maps/place/Rua+1º+de+Maio,+235+-+Margarida+Galvan,+Dois+Vizinhos+-+PR,+85660-000,+Brazil/@-25.7280799,-53.0592741"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Rio Grande Do Norte</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemonorte</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Alm Alexandrino De Alencar, 1800 - Tirol - Natal, Rio Grande Do Norte - Cep:59015-350</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(84)99129432 <br> (84)32326724 <br> (84)32326703</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Almirante+Alexandrino+de+Alencar,+1800+-+Tirol,+Natal+-+RN,+Brazil/@-5.8049797,-35.2085223" ng-href="https://www.google.com.br/maps/place/Avenida+Almirante+Alexandrino+de+Alencar,+1800+-+Tirol,+Natal+-+RN,+Brazil/@-5.8049797,-35.2085223"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Rio Grande Do Norte</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemovida</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Nilo Pecanha, 199 - Petropolis - Natal, Rio Grande Do Norte - Cep:59012-300</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(84)32024289 <br> (84)32025366 <br> (84)99049200</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Nilo+Peçanha,+199+-+Petrópolis,+Natal+-+RN,+59012-300,+Brazil/@-5.7814604,-35.1970392" ng-href="https://www.google.com.br/maps/place/Avenida+Nilo+Peçanha,+199+-+Petrópolis,+Natal+-+RN,+59012-300,+Brazil/@-5.7814604,-35.1970392"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Sergipe</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemose</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Pres Tancredo Neves, 0 C. Adm. Gov Augusto - Capucho - Aracaju, Sergipe - Cep:49080-470</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(79)32258039 <br> (79)32258000 <br> (79)32593195 <br></p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Presidente+Tancredo+Neves,+0+-+Jabutiana,+Aracaju+-+SE,+Brazil/@-10.9256341,-37.0804655" ng-href="https://www.google.com.br/maps/place/Avenida+Presidente+Tancredo+Neves,+0+-+Jabutiana,+Aracaju+-+SE,+Brazil/@-10.9256341,-37.0804655"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar -->
+  </div><!-- end ngRepeat: regiao in regioes --><div ng-repeat="regiao in regioes" class="ng-scope">
+  <div class="col-md-12" ng-hide="estado.value || search.cep">
+  <h5 ng-bind-html="regiao.regiao" class="ng-binding">Região Centro-Oeste</h5>
+  </div>
+  <!-- ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Distrito Federal</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Fundação Hemocentro De Brasília</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Smhn, 03 Qd.03 Conj.a Bloco03 - Asa Norte - Brasilia, Distrito Federal - Cep:70710-908</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(61)33274447  <br> (61)33274413</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Hospital+Regional+da+Asa+Norte+-+Brasília,+Brasília+-+DF,+Brazil/@-15.7856713,-47.8828645" ng-href="https://www.google.com.br/maps/place/Hospital+Regional+da+Asa+Norte+-+Brasília,+Brasília+-+DF,+Brazil/@-15.7856713,-47.8828645"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Goiás</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemocentro De Goiás</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Anhanguera, 5195 - Setor Coimbra - Goiania, Goiás - Cep:74535-010</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(62)3201-4570 <br> (62)3201-4101</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Anhanguera,+5195+-+Setor+Central,+Goiânia+-+GO,+74040-010,+Brazil/@-16.6753041,-49.2593239" ng-href="https://www.google.com.br/maps/place/Avenida+Anhanguera,+5195+-+Setor+Central,+Goiânia+-+GO,+74040-010,+Brazil/@-16.6753041,-49.2593239"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Mato Grosso</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Mt Hemocentro</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Treze De Junho, 1055 - Porto - Cuiaba, Mato Grosso - Cep:78025-000</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(65)33210351  <br> (65)36230044 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+13+de+Junho,+1055+-+Centro+Sul,+Cuiabá+-+MT,+Brazil/@-15.6054899,-56.1015682" ng-href="https://www.google.com.br/maps/place/Rua+13+de+Junho,+1055+-+Centro+Sul,+Cuiabá+-+MT,+Brazil/@-15.6054899,-56.1015682"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Mato Grosso Do Sul</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemosul</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Fernando C Da Costa, 1304 - Centro - Campo Grande, Mato Grosso Do Sul - Cep:79004-310</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(67)33121500  <br> (67)33121539 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Fernando+Corrêa+da+Costa,+1304+-+Vila+Carvalho,+Campo+Grande+-+MS,+79004-311,+Brazil/@-20.4684173,-54.6090172" ng-href="https://www.google.com.br/maps/place/Avenida+Fernando+Corrêa+da+Costa,+1304+-+Vila+Carvalho,+Campo+Grande+-+MS,+79004-311,+Brazil/@-20.4684173,-54.6090172"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar -->
+  </div><!-- end ngRepeat: regiao in regioes --><div ng-repeat="regiao in regioes" class="ng-scope">
+  <div class="col-md-12" ng-hide="estado.value || search.cep">
+  <h5 ng-bind-html="regiao.regiao" class="ng-binding">Região Sudeste</h5>
+  </div>
+  <!-- ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Espírito Santo</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemoes</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Mal Campos, 1468 - Maruípe - Vitoria, Espírito Santo - Cep:29045-460</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(27)36367925 <br> (27)36367920</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Marechal+Campos,+1468+-+Nazareth,+Vitória+-+ES,+29047-100,+Brazil/@-20.2979169,-40.3169339" ng-href="https://www.google.com.br/maps/place/Avenida+Marechal+Campos,+1468+-+Nazareth,+Vitória+-+ES,+29047-100,+Brazil/@-20.2979169,-40.3169339"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Minas Gerais</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Núcleo Regional De Patos De Minas</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Maj Gote, 1255 - Centro - Patos De Minas, Minas Gerais - Cep:38700-001</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(34)38229646 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Major+Gote,+1255+-+Centro,+Patos+de+Minas+-+MG,+Brazil/@-18.5941011,-46.5149362" ng-href="https://www.google.com.br/maps/place/Rua+Major+Gote,+1255+-+Centro,+Patos+de+Minas+-+MG,+Brazil/@-18.5941011,-46.5149362"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Minas Gerais</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Nucleo Regional De Ponte Nova</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Carlos Gomes, 17 - Esplanada - Ponte Nova, Minas Gerais - Cep:35430-069</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(31)38173212 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Carlos+Gomes,+17+-+Esplanada,+Ponte+Nova+-+MG,+35430-069,+Brazil/@-20.4186282,-42.9131912" ng-href="https://www.google.com.br/maps/place/Rua+Carlos+Gomes,+17+-+Esplanada,+Ponte+Nova+-+MG,+35430-069,+Brazil/@-20.4186282,-42.9131912"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Minas Gerais</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Nucleo Regional De Pouso Alegre</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Comendador José Garcia, 825 - Centro - Pouso Alegre, Minas Gerais - Cep:37550-000</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(35)34499900 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Comendador+José+García,+825+-+Nova+Pouso+Alegre,+Pouso+Alegre+-+MG,+37550-000,+Brazil/@-22.2261348,-45.9295297" ng-href="https://www.google.com.br/maps/place/Rua+Comendador+José+García,+825+-+Nova+Pouso+Alegre,+Pouso+Alegre+-+MG,+37550-000,+Brazil/@-22.2261348,-45.9295297"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Minas Gerais</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Nucleo Regional De São João Del Rei</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Pref Nascimento Teixeira, 175 - Segredo - Sao Joao Del Rei, Minas Gerais - Cep:36307-404</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(32)33713389 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Prefeito+Nascimento+Teixeira,+175+-+Segredo,+São+João+Del+Rei+-+MG,+36307-404,+Brazil/@-21.1388677,-44.25582" ng-href="https://www.google.com.br/maps/place/Rua+Prefeito+Nascimento+Teixeira,+175+-+Segredo,+São+João+Del+Rei+-+MG,+36307-404,+Brazil/@-21.1388677,-44.25582"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Minas Gerais</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Nucleo Regional De Sete Lagoas</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Renato Azeredo, 3170 - Canaa - Sete Lagoas, Minas Gerais - Cep:35700-312</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(31)37745074 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Doutor+Renato+Azeredo,+3170+-+Canaã,+Sete+Lagoas+-+MG,+Brazil/@-19.4624525,-44.2294823" ng-href="https://www.google.com.br/maps/place/Avenida+Doutor+Renato+Azeredo,+3170+-+Canaã,+Sete+Lagoas+-+MG,+Brazil/@-19.4624525,-44.2294823"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Minas Gerais</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Posto De Coleta De Betim Hemominas</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Rua Salvador Gonçalves Diniz, 191 - Baixada - Betim, Minas Gerais - Cep:36900-000</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(31)35951010 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Betim+-+MG,+Brazil/@-19.9673078,-44.2011904" ng-href="https://www.google.com.br/maps/place/Betim+-+MG,+Brazil/@-19.9673078,-44.2011904"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Minas Gerais</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Unidade De Coleta E Transfusão De Além Paraíba Hemominas</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Rua Felizardo Esquerdo, 45 - Ilha Recreio - Alem Paraiba, Minas Gerais - Cep:36660-000</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(32)34624597 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Além+Paraíba+-+MG,+Brazil/@-21.8833835,-42.6985095" ng-href="https://www.google.com.br/maps/place/Além+Paraíba+-+MG,+Brazil/@-21.8833835,-42.6985095"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Minas Gerais</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Unidade De Coleta E Transfusão Hjk</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Dr Cristiano Rezende, 2505 - Flavio Marques Lisboa - Belo Horizonte, Minas Gerais - Cep:30620-470</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(31)33908014 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Doutor+Cristiano+Rezende,+2505+-+Bonsucesso,+Belo+Horizonte+-+MG,+30622-020,+Brazil/@-19.9892591,-43.9966115" ng-href="https://www.google.com.br/maps/place/Rua+Doutor+Cristiano+Rezende,+2505+-+Bonsucesso,+Belo+Horizonte+-+MG,+30622-020,+Brazil/@-19.9892591,-43.9966115"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Minas Gerais</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Fundação Hemominas – Administração Central</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Gr Para, 822 - Funcionarios - Belo Horizonte, Minas Gerais - Cep:30150-341</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(31)37687527  <br> (31)37687499 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Grão+Pará,+822+-+Funcionários,+Belo+Horizonte+-+MG,+Brazil/@-19.929638,-43.9233597" ng-href="https://www.google.com.br/maps/place/Rua+Grão+Pará,+822+-+Funcionários,+Belo+Horizonte+-+MG,+Brazil/@-19.929638,-43.9233597"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Minas Gerais</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Fundação Hemominas De Belo Horizonte</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Al Ezequiel Dias, 321 - Centro - Belo Horizonte, Minas Gerais - Cep:30130-110</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(31)37684562  <br> (31)37684603 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Alameda+Ezequiel+Dias,+321+-+Centro,+Belo+Horizonte+-+MG,+Brazil/@-19.9248522,-43.9319432" ng-href="https://www.google.com.br/maps/place/Alameda+Ezequiel+Dias,+321+-+Centro,+Belo+Horizonte+-+MG,+Brazil/@-19.9248522,-43.9319432"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Minas Gerais</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemocentro Regional De Juiz De Fora</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Br De Cataguases, 0 - Santa Helena - Juiz De Fora, Minas Gerais - Cep:36015-370</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(32)32573100 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Barão+de+Cataguases,+0+-+Santa+Helena,+Juiz+de+Fora+-+MG,+Brazil/@-21.7533412,-43.3511177" ng-href="https://www.google.com.br/maps/place/Rua+Barão+de+Cataguases,+0+-+Santa+Helena,+Juiz+de+Fora+-+MG,+Brazil/@-21.7533412,-43.3511177"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Minas Gerais</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemocentro Regional De Montes Claros</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Rua Urbino Viana, 640 - Vila Guilhermina - Montes Claros, Minas Gerais - Cep:36900-000</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(38)32187810 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Urbino+Viana,+640+-+Morrinhos,+Montes+Claros+-+MG,+39400-729,+Brazil/@-16.7318827,-43.871102" ng-href="https://www.google.com.br/maps/place/Rua+Urbino+Viana,+640+-+Morrinhos,+Montes+Claros+-+MG,+39400-729,+Brazil/@-16.7318827,-43.871102"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Minas Gerais</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemocentro Regional De Uberaba</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Getulio Guarita, 250 - Nossa Senhora Da Abadia - Uberaba, Minas Gerais - Cep:38025-440</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(34)33125077 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Getúlio+Guaritá,+250+-+Nossa+Senhora+da+Abadia,+Uberaba+-+MG,+38025-440,+Brazil/@-19.7568472,-47.9306543" ng-href="https://www.google.com.br/maps/place/Rua+Getúlio+Guaritá,+250+-+Nossa+Senhora+da+Abadia,+Uberaba+-+MG,+38025-440,+Brazil/@-19.7568472,-47.9306543"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Minas Gerais</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemocentro Regional De Uberlândia</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Levino De Souza, 1845 - Umuarama - Uberlandia, Minas Gerais - Cep:38405-322</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(34)32228801 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Levino+de+Souza,+1845+-+Umuarama,+Uberlândia+-+MG,+38405-322,+Brazil/@-18.8810847,-48.2610289" ng-href="https://www.google.com.br/maps/place/Avenida+Levino+de+Souza,+1845+-+Umuarama,+Uberlândia+-+MG,+38405-322,+Brazil/@-18.8810847,-48.2610289"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Minas Gerais</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemominas De Governador Valadares</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Rui Barbosa, 149 - Centro - Governador Valadares, Minas Gerais - Cep:35020-510</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(33)32125800 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Rui+Barbosa,+149+-+Centro,+Governador+Valadares+-+MG,+35020-510,+Brazil/@-18.8541135,-41.939479" ng-href="https://www.google.com.br/maps/place/Rua+Rui+Barbosa,+149+-+Centro,+Governador+Valadares+-+MG,+35020-510,+Brazil/@-18.8541135,-41.939479"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Minas Gerais</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemominas De Ituiutaba</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av. 5 A, 0 - Progresso - Ituiutaba, Minas Gerais - Cep:38302-010</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(34)32613555 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+A,+0+-+Lagoa+Azul,+Ituiutaba+-+MG,+Brazil/@-18.9739665,-49.4857075" ng-href="https://www.google.com.br/maps/place/Rua+A,+0+-+Lagoa+Azul,+Ituiutaba+-+MG,+Brazil/@-18.9739665,-49.4857075"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Minas Gerais</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemominas Passos</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Dr Jose L De Barros, 313 - Belo Horizonte - Passos, Minas Gerais - Cep:37900-030</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(35)35224202 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Doutor+José+Lemos+de+Barros,+313+-+Muarama,+Passos+-+MG,+Brazil/@-20.7265681,-46.6120678" ng-href="https://www.google.com.br/maps/place/Rua+Doutor+José+Lemos+de+Barros,+313+-+Muarama,+Passos+-+MG,+Brazil/@-20.7265681,-46.6120678"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Minas Gerais</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemominas Poços De Caldas</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Jose R Prezia, 303 - Jardim Dos Estados - Pocos De Caldas, Minas Gerais - Cep:37701-102</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(35)37129012 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+José+Remígio+Prezia,+303+-+Jardim+dos+Estados,+Poços+de+Caldas+-+MG,+Brazil/@-21.7847751,-46.5529022" ng-href="https://www.google.com.br/maps/place/Avenida+José+Remígio+Prezia,+303+-+Jardim+dos+Estados,+Poços+de+Caldas+-+MG,+Brazil/@-21.7847751,-46.5529022"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Minas Gerais</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Núcleo Regional De Diamantina Hemominas</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Rua Da Glória, 469 Fundos - Centro - Diamantina, Minas Gerais - Cep:39100-000</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(38)35313762 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Diamantina,+469+-+Alvorada,+Contagem+-+MG,+32041-480,+Brazil/@-19.9049196,-44.076178" ng-href="https://www.google.com.br/maps/place/Rua+Diamantina,+469+-+Alvorada,+Contagem+-+MG,+32041-480,+Brazil/@-19.9049196,-44.076178"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Minas Gerais</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Núcleo Regional De Manhuaçu</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Rua Frederico Dolabela, 289 - Baixada - Manhuacu, Minas Gerais - Cep:36900-000</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(33)33311021 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Manhuaçu+-+MG,+Brazil/@-20.2555875,-42.030947" ng-href="https://www.google.com.br/maps/place/Manhuaçu+-+MG,+Brazil/@-20.2555875,-42.030947"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Rio de Janeiro</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Núcleo de Hemoterapia do Hospital Universitário Pedro Ernesto – UERJ</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Boulevard 28 de setembro, 109 - Vila Isabel - Rio de Janeiro, RJ - CEP 20551-030</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(21)2868-8134</p>
+  <a target="_blank" href="https://goo.gl/maps/NdLdQ4zHvTS2" ng-href="https://goo.gl/maps/NdLdQ4zHvTS2"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Rio de Janeiro</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Banco De Sangue Do Instituto Nacional De Câncer José Alencar Gomes Da Silva</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Praça Cruz Vermelha, 23 2º Andar - Centro - Rio De Janeiro, Rio De Janeiro - Cep:20230-130</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(21) 3207-1580</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Praça+Cruz+Vermelha,+23+-+Centro,+Rio+de+Janeiro+-+RJ,+20230-130,+Brazil/@-22.9116513,-43.1884478" ng-href="https://www.google.com.br/maps/place/Praça+Cruz+Vermelha,+23+-+Centro,+Rio+de+Janeiro+-+RJ,+20230-130,+Brazil/@-22.9116513,-43.1884478"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">São Paulo</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemocentro De Ribeirão Preto</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Ten Catao Roxo, 2501 - Vila Monte Alegre - Ribeirao Preto, São Paulo - Cep:14051-140</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(16)21019300 <br> (16)21019663</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Tenente+Catão+Roxo,+2501+-+Vila+Monte+Alegre,+Ribeirão+Preto+-+SP,+Brazil/@-21.1605017,-47.8494722" ng-href="https://www.google.com.br/maps/place/Rua+Tenente+Catão+Roxo,+2501+-+Vila+Monte+Alegre,+Ribeirão+Preto+-+SP,+Brazil/@-21.1605017,-47.8494722"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">São Paulo</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemonúcleo De  Santos</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Rua Oswaldo Cruz, 197 - Boqueirao - Santos, São Paulo - Cep:11045-904</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(13)32021428</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Oswaldo+Cruz,+197+-+Boqueirão,+Santos+-+SP,+Brazil/@-23.9624002,-46.3215602" ng-href="https://www.google.com.br/maps/place/Rua+Oswaldo+Cruz,+197+-+Boqueirão,+Santos+-+SP,+Brazil/@-23.9624002,-46.3215602"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">São Paulo</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemonúcleo De Bauru</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Mns Claro, 888  - Centro - Bauru, São Paulo - Cep:17015-130</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(14)32344412 Ramal:</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Monsenhor+Claro,+8-88+-+Centro,+Bauru+-+SP,+Brazil/@-22.3306151,-49.0761128" ng-href="https://www.google.com.br/maps/place/Rua+Monsenhor+Claro,+8-88+-+Centro,+Bauru+-+SP,+Brazil/@-22.3306151,-49.0761128"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">São Paulo</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hospital Amaral Carvalho</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Da Silveria, 150 - Chacara Braz Miraglia - Jau, São Paulo - Cep:17210-080</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(14)36021200</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Doná+Silvéria,+150+-+Chácara+Braz+Miraglia,+Jaú+-+SP,+Brazil/@-22.2916715,-48.5500654" ng-href="https://www.google.com.br/maps/place/Rua+Doná+Silvéria,+150+-+Chácara+Braz+Miraglia,+Jaú+-+SP,+Brazil/@-22.2916715,-48.5500654"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">São Paulo</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hospital De Cancer De Barretos</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Antenor D Vilela, 1331 - Doutor Paulo Prata - Barretos, São Paulo - Cep:14784-400</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(17)33216600 Ramal:7114 <br> (17)33216600 Ramal:6753 <br> (17)33216600 Ramal:7115 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Antenor+Duarte+Viléla,+1331+-+Doutor+Paulo+Prata,+Barretos+-+SP,+Brazil/@-20.5889928,-48.5695037" ng-href="https://www.google.com.br/maps/place/Rua+Antenor+Duarte+Viléla,+1331+-+Doutor+Paulo+Prata,+Barretos+-+SP,+Brazil/@-20.5889928,-48.5695037"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">São Paulo</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hospital Regional De Assis</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Pc Dr Symphronio A Dos Santos, 0 - Centro - Assis, São Paulo - Cep:19814-015</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(18)33026000 Ramal:6023 <br> (18)33026000 Ramal:6025</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Assis+-+SP,+Brazil/@-22.6604341,-50.4187813" ng-href="https://www.google.com.br/maps/place/Assis+-+SP,+Brazil/@-22.6604341,-50.4187813"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">São Paulo</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hospital São Paulo De Ensino Da Unifesp São Paulo</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Rua Dr° Diogo de Faria, nº 824 - 1º andar - Vila Clementino - Sao Paulo, São Paulo - Cep: 04037-002</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(11)5576-4240 Opção:1</p>
+  <a target="_blank" href="https://goo.gl/maps/sHaZ4uamSMb8XBKo6" ng-href="https://goo.gl/maps/sHaZ4uamSMb8XBKo6"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">São Paulo</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Nucleo De Atendimento A Comunidade Farmácia Araraquara</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Exps Do Brasil, 1621 - Centro - Araraquara, São Paulo - Cep:14801-360</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(16)33016102</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Araraquara+-+SP,+Brazil/@-21.7848272,-48.1786486" ng-href="https://www.google.com.br/maps/place/Araraquara+-+SP,+Brazil/@-21.7848272,-48.1786486"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">São Paulo</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Colsan</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Cdor Pereira Inacio, 564 - Jardim Faculdade - Sorocaba, São Paulo - Cep:18030-005</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(15)32242930 <br> (15)33329122</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Comendador+Pereira+Inácio,+564+-+Jardim+Vergueiro,+Sorocaba+-+SP,+Brazil/@-23.5114888,-47.456187" ng-href="https://www.google.com.br/maps/place/Avenida+Comendador+Pereira+Inácio,+564+-+Jardim+Vergueiro,+Sorocaba+-+SP,+Brazil/@-23.5114888,-47.456187"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">São Paulo</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Fundação Faculdade Regional De Medicina De São José Do Rio Preto</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Jamil Feres Kfouri, 80 - Jardim Panorama - Sao Jose Do Rio Preto, São Paulo - Cep:15091-240</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(17)32015076 Ramal:1930 <br> (17)32015078 Ramal:1930</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/São+José+do+Rio+Preto+-+State+of+São+Paulo,+Brazil/@-20.811761,-49.3762272" ng-href="https://www.google.com.br/maps/place/São+José+do+Rio+Preto+-+State+of+São+Paulo,+Brazil/@-20.811761,-49.3762272"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">São Paulo</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemocentro Da Faculdade De Medicina De Marilia</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Lourival Freire, 240 - Fragata - Marilia, São Paulo - Cep:17519-050</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(14)34021866</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Lourival+Freire+-+Fragata,+Marília+-+SP,+17519-050,+Brazil/@-22.2245865,-49.9375091" ng-href="https://www.google.com.br/maps/place/Rua+Lourival+Freire+-+Fragata,+Marília+-+SP,+17519-050,+Brazil/@-22.2245865,-49.9375091"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">São Paulo</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemocentro Da Santa Casa De São Paulo/laboratório De Histocompatibilidade</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Mq De Itu, 579 Laboratório 2º Andar - Vila Buarque - Sao Paulo, São Paulo - Cep:01223-001</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">2176-7249 (direto) ou 2176-7000 - Ramal: 7249</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Marquês+de+Itu,+579+-+Vila+Buarque,+São+Paulo+-+SP,+01223-001,+Brazil/@-23.543883,-46.6499773" ng-href="https://www.google.com.br/maps/place/Rua+Marquês+de+Itu,+579+-+Vila+Buarque,+São+Paulo+-+SP,+01223-001,+Brazil/@-23.543883,-46.6499773"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">São Paulo</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemocentro De Botucatu</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Distrito De Rubião Júnior, 0  - Rubião Junior - Botucatu, São Paulo - Cep:18618-970</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(14)38116041 Ramal:215 <br> (14)38116041 Ramal:240 <br> (14)38116041 Ramal:237</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Rubião+Jr,+0+-+Centro,+Botucatu+-+SP,+18600-400,+Brazil/@-22.8992387,-48.4924076" ng-href="https://www.google.com.br/maps/place/Avenida+Rubião+Jr,+0+-+Centro,+Botucatu+-+SP,+18600-400,+Brazil/@-22.8992387,-48.4924076"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">São Paulo</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemocentro De Campinas/ Unicamp</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Carlos Chagas, 480 - Cidade Universitaria - Campinas, São Paulo - Cep:13083-878</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(19)35218705 <br> 0800 7228432</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Hemocentro+-+Unicamp+-+Rua+Carlos+Chagas,+480+-+Cidade+Universitária,+Campinas+-+SP,+13083-878,+Brazil/@-22.828624,-47.063853" ng-href="https://www.google.com.br/maps/place/Hemocentro+-+Unicamp+-+Rua+Carlos+Chagas,+480+-+Cidade+Universitária,+Campinas+-+SP,+13083-878,+Brazil/@-22.828624,-47.063853"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar -->
+  </div><!-- end ngRepeat: regiao in regioes --><div ng-repeat="regiao in regioes" class="ng-scope">
+  <div class="col-md-12" ng-hide="estado.value || search.cep">
+  <h5 ng-bind-html="regiao.regiao" class="ng-binding">Região Sul</h5>
+  </div>
+  <!-- ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraná</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hospital Universitário Regional Do Norte Do Paraná</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R. Claudio D. Cavalieri, 156 - Jd. Aruba - Londrina, Paraná - Cep:86038-350</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(43)33712218 <br> (43)33712356 <br> (43)33712417 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Londrina+-+PR,+Brazil/@-23.3044524,-51.1695824" ng-href="https://www.google.com.br/maps/place/Londrina+-+PR,+Brazil/@-23.3044524,-51.1695824"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraná</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Unidade De Coleta E Transfusão De Toledo</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Alm Barroso, 2490 - Centro - Toledo, Paraná - Cep:85900-020</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(45)33791993 <br> (45)99128699</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Almirante+Barroso,+2490+-+Centro,+Toledo+-+PR,+85900-020,+Brazil/@-24.7287548,-53.7408363" ng-href="https://www.google.com.br/maps/place/Rua+Almirante+Barroso,+2490+-+Centro,+Toledo+-+PR,+85900-020,+Brazil/@-24.7287548,-53.7408363"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraná</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemepar Cornelio Procopio</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Rua Justino Marques Bonfim, 27 - Centro - Cornelio Procopio, Paraná - Cep:86300-000</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(43)35203526 <br> (43)35203523<br> (43)35242388 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Cornélio+Procópio+-+PR,+Brazil/@-23.1827465,-50.6456587" ng-href="https://www.google.com.br/maps/place/Cornélio+Procópio+-+PR,+Brazil/@-23.1827465,-50.6456587"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraná</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemepar Curitiba</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Tv Joao Prosdocimo, 145 - Alto Da Rua Xv - Curitiba, Paraná - Cep:80045-145</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(41)32814042 <br> (41)32814000 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Travessa+João+Prosdócimo,+145+-+Alto+da+Rua+XV,+Matriz,+Curitiba+-+PR,+Brazil/@-25.4249838,-49.257592" ng-href="https://www.google.com.br/maps/place/Travessa+João+Prosdócimo,+145+-+Alto+da+Rua+XV,+Matriz,+Curitiba+-+PR,+Brazil/@-25.4249838,-49.257592"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraná</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemepar Guarapuava</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Afonso Botelho, 134 - Trianon - Guarapuava, Paraná - Cep:85015-000</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(42)36222819  <br> (42)36223790 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Afonso+Botelho,+134+-+Santana,+Guarapuava+-+PR,+85070-165,+Brazil/@-25.3974942,-51.4580999" ng-href="https://www.google.com.br/maps/place/Rua+Afonso+Botelho,+134+-+Santana,+Guarapuava+-+PR,+85070-165,+Brazil/@-25.3974942,-51.4580999"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraná</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemepar Irati</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Rua Coronel Garcia, 761 - Centro - Irati, Paraná - Cep:84500-000</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(42)34232400  <br> (42)34223119 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Coronel+Grácia,+761,+Irati+-+PR,+84500-000,+Brazil/@-25.4673017,-50.6501954" ng-href="https://www.google.com.br/maps/place/Rua+Coronel+Grácia,+761,+Irati+-+PR,+84500-000,+Brazil/@-25.4673017,-50.6501954"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraná</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemepar Jacarezinho</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Rua Coronel Cecílio Rocha, 425 - Centro - Jacarezinho, Paraná - Cep:86400-000</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(43)35271777 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Jacarèzinho+-+PR,+Brazil/@-23.157939,-49.9777202" ng-href="https://www.google.com.br/maps/place/Jacarèzinho+-+PR,+Brazil/@-23.157939,-49.9777202"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraná</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemepar Paranagua</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Rua Gabriel De Lara, 481 - Centro Historico - Paranagua, Paraná - Cep:83203-250</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(41)34224931 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Gabriel+de+Lara,+481+-+Centro+Histórico,+Paranaguá+-+PR,+83203-742,+Brazil/@-25.5202259,-48.5064362" ng-href="https://www.google.com.br/maps/place/Avenida+Gabriel+de+Lara,+481+-+Centro+Histórico,+Paranaguá+-+PR,+83203-742,+Brazil/@-25.5202259,-48.5064362"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraná</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemepar Ponta Grossa</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Gen Osorio, 2390 - Centro - Ponta Grossa, Paraná - Cep:84010-080</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(42)32231616 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+General+Osório+-+Centro,+Ponta+Grossa+-+PR,+Brazil/@-25.1003739,-50.1585908" ng-href="https://www.google.com.br/maps/place/Rua+General+Osório+-+Centro,+Ponta+Grossa+-+PR,+Brazil/@-25.1003739,-50.1585908"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraná</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemepar Telemaco Borba</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Rua Osório De Almeida Taques, 62 - Centro - Telemaco Borba, Paraná - Cep:84261-060</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(42)32723743 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Osório+Almeida+Taques,+62+-+Centro,+Telêmaco+Borba+-+PR,+84261-680,+Brazil/@-24.3304024,-50.6191598" ng-href="https://www.google.com.br/maps/place/Avenida+Osório+Almeida+Taques,+62+-+Centro,+Telêmaco+Borba+-+PR,+84261-680,+Brazil/@-24.3304024,-50.6191598"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraná</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemepar Umuarama</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Manaus, 4444 - Centro Cívico - Umuarama, Paraná - Cep:87501-130</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(44)36218301 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Umuarama+-+PR,+Brazil/@-23.7661064,-53.3206105" ng-href="https://www.google.com.br/maps/place/Umuarama+-+PR,+Brazil/@-23.7661064,-53.3206105"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraná</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemobanco – Curitiba</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Cap Souza Franco, 290 Casa - Batel - Curitiba, Paraná - Cep:80730-420</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(41)30235545 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Capitão+Souza+Franco,+290+-+Batel,+Matriz,+Curitiba+-+PR,+80730-420,+Brazil/@-25.4356704,-49.2904908" ng-href="https://www.google.com.br/maps/place/Rua+Capitão+Souza+Franco,+290+-+Batel,+Matriz,+Curitiba+-+PR,+80730-420,+Brazil/@-25.4356704,-49.2904908"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraná</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemocentro Regional De Cascavel</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Avaetes, 37 - Santo Onofre - Cascavel, Paraná - Cep:85806-380</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(45)32264549  <br> (45)32260808 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Avaetés,+37+-+Santo+Onofre,+Cascavel+-+PR,+85806-380,+Brazil/@-24.9759069,-53.4964194" ng-href="https://www.google.com.br/maps/place/Rua+Avaetés,+37+-+Santo+Onofre,+Cascavel+-+PR,+85806-380,+Brazil/@-24.9759069,-53.4964194"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraná</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemocentro Regional De Maringá</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Mandacaru, 1600 - Parque Das Laranjeiras - Maringa, Paraná - Cep:87083-240</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(44)30119151  <br> (44)30119400  <br> (44)30119194 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Mandacaru,+1600+-+Parque+das+Laranjeiras,+Maringá+-+PR,+Brazil/@-23.4018724,-51.956657" ng-href="https://www.google.com.br/maps/place/Avenida+Mandacaru,+1600+-+Parque+das+Laranjeiras,+Maringá+-+PR,+Brazil/@-23.4018724,-51.956657"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraná</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemonúcleo De Foz Do Iguaçu</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Gramado, 364 - Vila Residencial A - Foz Do Iguacu, Paraná - Cep:85860-460</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(45)35768020 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Gramado,+364+-+Vila+A,+Foz+do+Iguaçu+-+PR,+85861-020,+Brazil/@-25.494464,-54.5383508" ng-href="https://www.google.com.br/maps/place/Avenida+Gramado,+364+-+Vila+A,+Foz+do+Iguaçu+-+PR,+85861-020,+Brazil/@-25.494464,-54.5383508"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraná</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemonúcleo Regional De Francisco Beltrão</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Marilia, 1327 - Padre Ulrico - Francisco Beltrao, Paraná - Cep:85604-400</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(46)35243454  <br> (46)35242434 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Marília,+1327+-+Luther+King,+Francisco+Beltrão+-+PR,+85605-140,+Brazil/@-26.0651667,-53.0448564" ng-href="https://www.google.com.br/maps/place/Rua+Marília,+1327+-+Luther+King,+Francisco+Beltrão+-+PR,+85605-140,+Brazil/@-26.0651667,-53.0448564"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraná</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemonúcleo Regional De Paranavaí</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Rio G Do Sul, 2390 - Centro - Paranavai, Paraná - Cep:87703-320</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(44)34215160  <br> (44)34215163  <br> (44)34215100 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Rio+Grande+do+Sul,+2390+-+Centro,+Paranavaí+-+PR,+87702-090,+Brazil/@-23.0731189,-52.4640465" ng-href="https://www.google.com.br/maps/place/Rua+Rio+Grande+do+Sul,+2390+-+Centro,+Paranavaí+-+PR,+87702-090,+Brazil/@-23.0731189,-52.4640465"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraná</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hospital De Clínicas – Ufpr</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Agostinho L Junior, 108 Térreo - Centro - Curitiba, Paraná - Cep:80030-110</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(41)33601800 Ramal:6527 <br> (41)33601875 <br> (41)33601800 Ramal:6481</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Agostinho+Leão+Junior,+108+-+Centro,+Matriz,+Curitiba+-+PR,+80030-110,+Brazil/@-25.4241867,-49.2649582" ng-href="https://www.google.com.br/maps/place/Avenida+Agostinho+Leão+Junior,+108+-+Centro,+Matriz,+Curitiba+-+PR,+80030-110,+Brazil/@-25.4241867,-49.2649582"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraná</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hospital Erasto Gaertner</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Dr Ovande Do Amaral, 201 Hospital Erasto Gaer - Jardim Das Americas - Curitiba, Paraná - Cep:81520-060</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(41)33615037  <br> (41)33615186  <br> (41)33615038 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Doutor+Ovande+do+Amaral,+201+-+Jardim+das+Americas,+Cajuru,+Curitiba+-+PR,+81520-060,+Brazil/@-25.4542386,-49.2394749" ng-href="https://www.google.com.br/maps/place/Rua+Doutor+Ovande+do+Amaral,+201+-+Jardim+das+Americas,+Cajuru,+Curitiba+-+PR,+81520-060,+Brazil/@-25.4542386,-49.2394749"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraná</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Assims</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Parana, 1633 - Sambugaro - Pato Branco, Paraná - Cep:85501-090</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(46)32251014  <br> (46)32253585  <br> (46)32253291 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Paraná,+1633+-+Centro,+Pato+Branco+-+PR,+85501-090,+Brazil/@-26.2233218,-52.6803241" ng-href="https://www.google.com.br/maps/place/Rua+Paraná,+1633+-+Centro,+Pato+Branco+-+PR,+85501-090,+Brazil/@-26.2233218,-52.6803241"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraná</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Banco De Sangue Na Santa Casa</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Pc Rui Barbosa, 694 - Centro - Curitiba, Paraná - Cep:80010-030</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(41)33222387 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Praça+Rui+Barbosa,+694+-+Centro,+Matriz,+Curitiba+-+PR,+80010-030,+Brazil/@-25.4369705,-49.2741851" ng-href="https://www.google.com.br/maps/place/Praça+Rui+Barbosa,+694+-+Centro,+Matriz,+Curitiba+-+PR,+80010-030,+Brazil/@-25.4369705,-49.2741851"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraná</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Cisvali</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Rua Castro Alves, 26 Prédio - Centro - Uniao Da Vitoria, Paraná - Cep:84600-000</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(42)35237930  <br> (42)35221365  <br> (42)35221793 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Castro+Alves,+26+-+Centro,+União+da+Vitória+-+PR,+84600-000,+Brazil/@-26.2270286,-51.0865923" ng-href="https://www.google.com.br/maps/place/Rua+Castro+Alves,+26+-+Centro,+União+da+Vitória+-+PR,+84600-000,+Brazil/@-26.2270286,-51.0865923"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraná</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Consorcio De Saude – Cianorte</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Praça Da Republica, 71 - Centro - Cianorte, Paraná - Cep:87200-000</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(44)3619191 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Consórcio+Intermunicipal+de+Saúde+Centro+Noroeste+do+Paraná-CISCENOP+-+Praça+da+República,+71+-+Zona+1,+Cianorte+-+PR,+87200-000,+Brazil/@-23.6551161,-52.6115821" ng-href="https://www.google.com.br/maps/place/Consórcio+Intermunicipal+de+Saúde+Centro+Noroeste+do+Paraná-CISCENOP+-+Praça+da+República,+71+-+Zona+1,+Cianorte+-+PR,+87200-000,+Brazil/@-23.6551161,-52.6115821"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraná</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemepar Apucarana</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Antonio Ostrenski, 03 - Centro - Apucarana, Paraná - Cep:86800-200</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(41)34204200 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Antônio+Ostrenski,+3+-+Centro,+Apucarana+-+PR,+86800-200,+Brazil/@-23.5533524,-51.4696826" ng-href="https://www.google.com.br/maps/place/Rua+Antônio+Ostrenski,+3+-+Centro,+Apucarana+-+PR,+86800-200,+Brazil/@-23.5533524,-51.4696826"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Paraná</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemepar Campo Mourao</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Mambore, 1500 - Centro - Campo Mourao, Paraná - Cep:87302-140</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(44)35251102  <br> (44)35231844 Ramal:</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Mambore,+1500+-+Centro,+Campo+Mourão+-+PR,+87302-140,+Brazil/@-24.045045,-52.3908055" ng-href="https://www.google.com.br/maps/place/Rua+Mambore,+1500+-+Centro,+Campo+Mourão+-+PR,+87302-140,+Brazil/@-24.045045,-52.3908055"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Rio Grande Do Sul</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemosar</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Rua Boa Vista, 401 - Centro - Santa Rosa, Rio Grande Do Sul - Cep:98900-000</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(55)35126122</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Boa+Vista,+401+-+Centro,+Santa+Rosa+-+RS,+98900-000,+Brazil/@-27.8684566,-54.4861736" ng-href="https://www.google.com.br/maps/place/Rua+Boa+Vista,+401+-+Centro,+Santa+Rosa+-+RS,+98900-000,+Brazil/@-27.8684566,-54.4861736"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Rio Grande Do Sul</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hospital Conceição</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Francisco Trein, 596 - Passo D'areia - Porto Alegre, Rio Grande Do Sul - Cep:91350-200</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(51)33574234</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Francisco+Trein,+596+-+Cristo+Redentor,+Porto+Alegre+-+RS,+Brazil/@-30.0162194,-51.15908" ng-href="https://www.google.com.br/maps/place/Avenida+Francisco+Trein,+596+-+Cristo+Redentor,+Porto+Alegre+-+RS,+Brazil/@-30.0162194,-51.15908"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Rio Grande Do Sul</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hospital De Clínicas De Porto Alegre</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Ramiro Barcelos, 2350 2º Andar - Santana - Porto Alegre, Rio Grande Do Sul - Cep:90035-007</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(51)33598309 <br> (51)33598020 <br> (51)33598308</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Ramiro+Barcelos,+2350+-+Floresta,+Porto+Alegre+-+RS,+90035-004,+Brazil/@-30.039951,-51.2082828" ng-href="https://www.google.com.br/maps/place/Rua+Ramiro+Barcelos,+2350+-+Floresta,+Porto+Alegre+-+RS,+90035-004,+Brazil/@-30.039951,-51.2082828"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Rio Grande Do Sul</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemocentro Regional De Alegrete</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Gen Sampaio, 10 - Vila Nova - Alegrete, Rio Grande Do Sul - Cep:97541-260</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(55)34264127</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+General+Sampaio,+10+-+Centro,+Alegrete+-+RS,+Brazil/@-29.7880963,-55.795094" ng-href="https://www.google.com.br/maps/place/Rua+General+Sampaio,+10+-+Centro,+Alegrete+-+RS,+Brazil/@-29.7880963,-55.795094"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Rio Grande Do Sul</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemocentro Regional De Caxias Do Sul</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Ernesto Alves, 2260 - Nossa Senhora De Lourdes - Caxias Do Sul, Rio Grande Do Sul - Cep:95020-360</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(54)32904576 <br> (54)32904577 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Ernesto+Alves,+2260+-+Nossa+Senhora+de+Lourdes,+Caxias+do+Sul+-+RS,+95020-360,+Brazil/@-29.1640035,-51.1852882" ng-href="https://www.google.com.br/maps/place/Rua+Ernesto+Alves,+2260+-+Nossa+Senhora+de+Lourdes,+Caxias+do+Sul+-+RS,+95020-360,+Brazil/@-29.1640035,-51.1852882"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Rio Grande Do Sul</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemocentro Regional De Cruz Alta</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">R Br Do Rio Branco, 1445 Fundos - Centro - Cruz Alta, Rio Grande Do Sul - Cep:98010-770</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(55)33263168 <br> (55)33263478 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Rua+Barão+do+Rio+Branco,+1445+-+Centro,+Cruz+Alta+-+RS,+98005-030,+Brazil/@-28.6420362,-53.6080518" ng-href="https://www.google.com.br/maps/place/Rua+Barão+do+Rio+Branco,+1445+-+Centro,+Cruz+Alta+-+RS,+98005-030,+Brazil/@-28.6420362,-53.6080518"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Rio Grande Do Sul</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemocentro Regional De Palmeira Das Missoes</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Rua Nassib Nassif, 503 - Loteamento Céu Azul - Palmeira Das Missoes, Rio Grande Do Sul - Cep:98300-000</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(55)37425676</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Palmeira+das+Missões+-+RS,+Brazil/@-27.9001784,-53.3140353" ng-href="https://www.google.com.br/maps/place/Palmeira+das+Missões+-+RS,+Brazil/@-27.9001784,-53.3140353"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Rio Grande Do Sul</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemocentro Regional De Santa Maria</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Al Santiago Do Chile, 35 Próximo Ao Fórum - Nossa Senhora De Lourdes - Santa Maria, Rio Grande Do Sul - Cep:97050-685</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(55)99164219 <br> (55)91316991 <br> (55)32215262 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Alameda+Santiago+do+Chile,+35+-+Nossa+Senhora+das+Dores,+Santa+Maria+-+RS,+97050-685,+Brazil/@-29.6926706,-53.7944018" ng-href="https://www.google.com.br/maps/place/Alameda+Santiago+do+Chile,+35+-+Nossa+Senhora+das+Dores,+Santa+Maria+-+RS,+97050-685,+Brazil/@-29.6926706,-53.7944018"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Rio Grande Do Sul</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemopasso Hemocentro Regional De Passo Fundo</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Sete De Setembro, 1055 Bloco A - Centro - Passo Fundo, Rio Grande Do Sul - Cep:99010-120</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(54)33115555  <br> (54)33111427</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Sete+de+Setembro,+1055+-+Centro,+Passo+Fundo+-+RS,+99010-120,+Brazil/@-28.2541176,-52.420188" ng-href="https://www.google.com.br/maps/place/Avenida+Sete+de+Setembro,+1055+-+Centro,+Passo+Fundo+-+RS,+99010-120,+Brazil/@-28.2541176,-52.420188"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Rio Grande Do Sul</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemopel</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Bento Goncalves, 4569 - Centro - Pelotas, Rio Grande Do Sul - Cep:96015-145</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(53)32254022  <br> (53)32223002 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Bento+Gonçalves,+4569+-+Porto,+Pelotas+-+RS,+96015-140,+Brazil/@-31.7581563,-52.3489107" ng-href="https://www.google.com.br/maps/place/Avenida+Bento+Gonçalves,+4569+-+Porto,+Pelotas+-+RS,+96015-140,+Brazil/@-31.7581563,-52.3489107"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Rio Grande Do Sul</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Hemorgs</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Bento Goncalves, 3722 - Partenon - Porto Alegre, Rio Grande Do Sul - Cep:90650-001</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(51)33366755</p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Bento+Gonçalves,+3722+-+Partenon,+Porto+Alegre+-+RS,+Brazil/@-30.0632495,-51.1787812" ng-href="https://www.google.com.br/maps/place/Avenida+Bento+Gonçalves,+3722+-+Partenon,+Porto+Alegre+-+RS,+Brazil/@-30.0632495,-51.1787812"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar --><div ng-repeat="estado in regiao.estados | filter:estado.value:analisar" class="ng-scope"> <!--  -->
+  <!-- ngRepeat: unidade in estado.unidades  | filter:search:startsWith --><div ng-repeat="unidade in estado.unidades  | filter:search:startsWith" class="ng-scope"> <!---->
+  <div class="col-md-12">
+  <div class="bloco-hemo">
+  <h5 ng-bind-html="estado.nome" class="ng-binding">Santa Catarina</h5>
+  <h4 ng-bind-html="unidade.title" class="ng-binding">Centro De Hematologia E Hemoterapia De Santa Catarina</h4>
+  <p ng-bind-html="unidade.the_content" class="ng-binding">Av Prf Othon Gama Deca, 756 Praça D. Pedro I - Centro - Florianopolis, Santa Catarina - Cep:88015-240</p>
+  <p ng-bind-html="unidade.tel" class="ng-binding">(48) 3251-9711 / (48) 3251-9712 / (48) 3251-9713 </p>
+  <a target="_blank" href="https://www.google.com.br/maps/place/Avenida+Professor+Othon+Gama+D'Eça,+756+-+Centro,+Florianópolis+-+SC,+Brazil/@-27.5889634,-48.5514392" ng-href="https://www.google.com.br/maps/place/Avenida+Professor+Othon+Gama+D'Eça,+756+-+Centro,+Florianópolis+-+SC,+Brazil/@-27.5889634,-48.5514392"><span class="sprite-map"></span>Ver
+  no
+  Google Maps</a>
+  </div>
+  </div>
+  </div><!-- end ngRepeat: unidade in estado.unidades  | filter:search:startsWith -->
+  </div><!-- end ngRepeat: estado in regiao.estados | filter:estado.value:analisar -->
+  </div><!-- end ngRepeat: regiao in regioes -->
+  </div>
+  </div>
+  </div>
